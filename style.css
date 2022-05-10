@@ -1,3 +1,32 @@
+:root {
+    /* Colores */
+    --color-primary: #F7931A;
+    --color-primary-soft: #FFE9D5;
+    --color-secondary: #1A9AF7;
+    --color-secondary-soft: #E7F5FF;
+    --color-primary-black: #201E1C;
+    --color-secondary-black: #282623;
+    --color-grey: #BABABA;
+    --color-primary-white: #FFFFFF;
+    --color-secondary-white: #FAF8F7;
+
+
+    /* Font Weight */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Font Family */
+    --font-family-dmSans: 'DM Sans', sans-serif;
+    --font-family-inter: 'Inter', sans-serif;
+
+    /* Font Size */
+    --font-size-large: 2.4rem;
+    --font-size-normal: 1.8rem;
+    --font-size-small: 1.4rem;
+
+}
+
 * {
     box-sizing: 0;
     margin: 0;
@@ -6,21 +35,29 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
-    font-family: 'Inter', sans-serif;
 }
 
-:root {
-    --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D5;
-    --secondary-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
-    --warm-black: #201E1C;
-    --warm-black1: #282623;
-    --grey: #BABABA;
-    --off-white: #FAF8F7;
-    --just-white: #FFFFFF;  
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-bold: 700;
+.header {
+    font-family: var(--font-family-dmSans);
+    background: linear-gradient(to right top, var(--color-primary), var(--color-primary-black) );
+}
+
+.header-content__title {
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-white);
+}
+
+.header-content__text {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-primary-soft);
+}
+
+.header-content__button {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-black);
+    background-color: var(--color-secondary-white);
+
 }
